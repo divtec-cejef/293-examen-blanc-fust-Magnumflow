@@ -25,16 +25,23 @@ img {
 
 a {
     text-decoration: none;
-    color: #ff8800;
+    color: #666666;
 }
 
+p {
+  font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 800px;
+}
 /********** STYLE HEADER *********/
 header {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
-
+header img {
+    max-height: 80px;
+}
 /********** STYLE NAVIGATION *********/
 
 header nav ul {
@@ -73,11 +80,15 @@ main {
 .produits {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .produits li {
     padding: 2% 1rem;
     transition: all 0.2s ease-in-out;
+    border: #151515 2px solid;
 }
 
 .produits li:hover {
@@ -99,4 +110,5 @@ main {
     text-align: center;
     margin: .5em 0 0;
     line-height: 1.1;
+    color:#ff8800;
 }
